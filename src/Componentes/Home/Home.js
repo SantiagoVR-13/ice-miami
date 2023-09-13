@@ -1,15 +1,18 @@
 import "./Home.scss";
 import React, { useState, useEffect } from "react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
-import gallery from "../../data/gallery.json";
+import gallerydata from "../../data/gallery.json";
 import GalleryImage from "../GalleryImage/GalleryImage";
+import LeftArrow from "../LeftArrow/LeftArrow";
+import RightArrow from "../RightArrow/RightArrow";
+import brickHouse from "../../Assets/Images/brick-house.png";
 
 function Home() {
   const [selectedImage, setSelectedImage] = React.useState([]);
   const [gallery, setGallery] = useState([]);
 
   useEffect(() => {
-    setGallery(gallery);
+    setGallery(gallerydata);
   }, []);
 
   const handleImageClick = (imageId) => () => {
@@ -25,13 +28,32 @@ function Home() {
   return (
     <>
       <div className="Home">
-        <h1 className="Home__title"> I.C.E INGENIEROS VIVILES ESTRUCTURALES</h1>
+        <div className="Home__initial-container">
+          <div className="Home__title-div">
+            <h1 className="Home__title">
+              {" "}
+              Transform Your Home with Expert Residential Construction
+            </h1>
+            <h2 className="Home__subtitle">
+              Your Partner for Seamless Permits and Stunning Renovations in
+              Miami.
+            </h2>
+          </div>
+          <div className="Home__image-div">
+            <img
+              className="Home__initial-image"
+              src={brickHouse}
+              alt="Description"
+            />
+          </div>
+        </div>
+
         <div className="Home__gallery-div">
           <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-            {gallery.map((category) => (
+            {gallerydata.map((image) => (
               <GalleryImage
-                title={category.name}
-                key={category.id}
+                title={image.name}
+                key={image.id}
                 onClick={handleImageClick(image.id)}
               />
             ))}
@@ -40,34 +62,6 @@ function Home() {
       </div>
     </>
   );
-
-  function LeftArrow() {
-    const { isFirstItemVisible, scrollPrev } =
-      React.useContext(VisibilityContext);
-
-    return (
-      <div
-        className={`arrow ${isFirstItemVisible ? "disabled" : ""}`}
-        onClick={() => scrollPrev()}
-      >
-        Left
-      </div>
-    );
-  }
-
-  function RightArrow() {
-    const { isLastItemVisible, scrollNext } =
-      React.useContext(VisibilityContext);
-
-    return (
-      <div
-        className={`arrow ${isLastItemVisible ? "disabled" : ""}`}
-        onClick={() => scrollNext()}
-      >
-        Right
-      </div>
-    );
-  }
 }
 
 export default Home;

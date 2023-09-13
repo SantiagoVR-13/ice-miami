@@ -13,7 +13,41 @@
     justify-content: center;
     align-items: center;
 
+    &__title-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        width: 50%;
+        // Tipo de letra initial ( Test )
+        font-family: 'Courier New', Courier, monospace; 
+    }
+
+    &__initial-container{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+    }
+
     &__title{
+        color: $primary-color-gold;
+        font-size: 48px;
+    }
+
+    &__image-div{
+        box-sizing: border-box;
+
+    }
+
+    &__initial-image{
+            width: 100%; 
+            max-width: 100%; 
+            height: auto; 
+            background-size: cover;
+            background-position: center;
+          }
+
+    &__subtitle{
         color: white;
+        font-size: 30px;
     }
 }
