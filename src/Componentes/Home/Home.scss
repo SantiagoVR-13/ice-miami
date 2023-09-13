@@ -1,0 +1,19 @@
+@use "../../Styles/global" as *;
+@use "../../Styles/mixins" as *;
+@use "../../Styles/variables" as *;
+
+
+.Home{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 2rem;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+        color: white;
+    }
+}

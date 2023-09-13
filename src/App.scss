@@ -1,0 +1,9 @@
+@use "../src/Styles/global" as *;
+@use "../src/Styles/mixins" as *;
+@use "../src/Styles/variables" as *;
+
+
+*{
+    background-color: $primary-color-black;
+
+}

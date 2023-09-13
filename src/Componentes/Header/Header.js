@@ -23,6 +23,16 @@ function Header() {
                 Services
               </button>
             </Link>
+            <Link className="nav-links__page-link" to="#">
+              <button className="nav-links__inactive nav-links__inactive--hover">
+                Blog
+              </button>
+            </Link>
+            <Link className="nav-links__page-link" to="#">
+              <button className="nav-links__inactive nav-links__inactive--hover">
+                Contact
+              </button>
+            </Link>
           </div>
         </nav>
       </div>

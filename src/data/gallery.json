@@ -1,0 +1,26 @@
+[
+    { "id": "1", "image": "Identify the main claim or argument in the text." },
+    { "id": "2", "image": "Identify any evidence provided to support the claim." },
+    {
+      "id": "3",
+      "image": "Look for words or phrases that imply something without explicit evidence."
+    },
+    { "id": "4", "image": "Check the accuracy of any factual claims in the text." },
+    {
+      "id": "4",
+      "image": "Identify and describe any biases present in the text, such as confirmation bias or cherry-picking data."
+    },
+    {
+      "id": "5",
+      "image": "Detect and describe any logical fallacies, such as strawman arguments or false dichotomies."
+    },
+    {
+      "id": "6",
+      "image": "Provide examples and evidence for each of the above points."
+    },
+    {
+      "id": "7",
+      "image": "Calculate an overall score or percentage to quantify the level of bias, based on prior analysis"
+    }
+  ]
+  
