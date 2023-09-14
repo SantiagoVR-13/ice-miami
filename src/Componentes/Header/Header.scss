@@ -7,7 +7,7 @@
   background-color: $primary-color-black;
   display: flex;              
   flex-direction: column;
-  padding: 1.25rem;                     
+  padding: 0.25rem;                     
   position: relative;
   height: 5rem;
   border-radius: 6px;
@@ -39,7 +39,7 @@
 
 
   .header-logo {
-    padding: 0;
+    padding: 0 0 0 2rem;
     margin-top: 0;
     display: flex;                  
     justify-content: center;
@@ -53,7 +53,7 @@
 
     &__img {
       width: 13rem;
-      height: 6rem;
+      height: 5rem;
     }
   }
 
@@ -61,6 +61,8 @@
   .nav {
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    padding-top: 1rem;
 
     @include desktop {
       width: 70%;

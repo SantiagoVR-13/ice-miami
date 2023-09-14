@@ -13,22 +13,22 @@ function Header() {
         </div>
         <nav className="nav">
           <div className="nav-links">
-            <Link className="nav-links__page-link" to="#">
+            <Link className="nav-links__page-link" to="/about">
               <button className="nav-links__current nav-links__current--active">
                 About
               </button>
             </Link>
-            <Link className="nav-links__page-link" to="#">
+            <Link className="nav-links__page-link" to="/services">
               <button className="nav-links__inactive nav-links__inactive--hover">
                 Services
               </button>
             </Link>
-            <Link className="nav-links__page-link" to="#">
+            <Link className="nav-links__page-link" to="/blog">
               <button className="nav-links__inactive nav-links__inactive--hover">
                 Blog
               </button>
             </Link>
-            <Link className="nav-links__page-link" to="#">
+            <Link className="nav-links__page-link" to="/contact">
               <button className="nav-links__inactive nav-links__inactive--hover">
                 Contact
               </button>

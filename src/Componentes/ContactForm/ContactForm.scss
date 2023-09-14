@@ -1,0 +1,58 @@
+@use "../../Styles/global" as *;
+@use "../../Styles/mixins" as *;
+@use "../../Styles/variables" as *;
+
+
+.contact-form{
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+
+    &__input-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input{
+        background-color: black;
+        color: $primary-color-gold;
+        padding: 0.8rem;
+        margin: 0.5rem;
+        width: 15rem;
+        border-radius: 6px;
+    }
+
+    &__description{
+        background-color: black;
+        color: $primary-color-gold;
+        border-radius: 6px;
+        padding: 0.8rem;
+        margin: 0.5rem;
+        padding-bottom: 12rem;
+        // height: 12rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__signin-button{
+        display: inline-block;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: $primary-color-indigo;
+        color: $white;
+        font-weight: 600;
+        font-size: 16px;
+        width: 95%;
+        margin: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    
+        &:hover {
+          background-color: #88D7FF;
+          color: $primary-color-black;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+}
+}

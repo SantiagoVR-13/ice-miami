@@ -1,11 +1,12 @@
 import "./Home.scss";
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import gallerydata from "../../data/gallery.json";
 import GalleryImage from "../GalleryImage/GalleryImage";
 import LeftArrow from "../LeftArrow/LeftArrow";
 import RightArrow from "../RightArrow/RightArrow";
-import brickHouse from "../../Assets/Images/brick-house.png";
+import brickHouse from "../../Assets/Images/white-modern-square.jpg";
 
 function Home() {
   const [selectedImage, setSelectedImage] = React.useState([]);
@@ -38,6 +39,9 @@ function Home() {
               Your Partner for Seamless Permits and Stunning Renovations in
               Miami.
             </h2>
+            <Link to={`/contact`} className="login-form__signin-link">
+              <button className="Home__contact-button">Contact Us!</button>
+            </Link>
           </div>
           <div className="Home__image-div">
             <img
